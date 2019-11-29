@@ -12,6 +12,7 @@ cp Makefile.config.tx2 Makefile.config
 echo "export PYTHONPATH=$(pwd)/python:\$PYTHONPATH" >> ~/.bashrc
 sudo apt install python-pip python3-pip python-matplotlib -y
 pip install cython
+pip install protobuf
 sudo apt install python-numpy python-skimage -y
 make all -j4
 make runtest -j4
